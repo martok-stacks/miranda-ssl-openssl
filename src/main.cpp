@@ -1,7 +1,8 @@
 /*
 
-Standard encryption plugin for Myranda NG
-Copyright (C) 2012-13 George Hazan
+Standard SSL driver for Miranda NG
+
+Copyright (ñ) 2014-15 Miranda NG project (http://miranda-ng.org)
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -36,8 +37,8 @@ PLUGININFOEX pluginInfo = {
 	__COPYRIGHT,
 	__AUTHORWEB,
 	UNICODE_AWARE,
-	// {B649702C-13DE-408A-B6C2-FB8FED2A2C90}
-	{ 0xb649702c, 0x13de, 0x408a, { 0xb6, 0xc2, 0xfb, 0x8f, 0xed, 0x2a, 0x2c, 0x90 } }
+	// 1e64fd80-299e-48a0-9441-de2868563b6f
+	{ 0x1e64fd80, 0x299e, 0x48a0, {0x94, 0x41, 0xde, 0x28, 0x68, 0x56, 0x3b, 0x6f}}
 };
 
 BOOL WINAPI DllMain(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpvReserved)
