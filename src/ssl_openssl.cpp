@@ -182,8 +182,8 @@ static bool SSL_library_load(void)
 		GetModuleFileName(hInst, dll, SIZEOF(dll));
 		TCHAR *p = _tcsrchr(dll, '\\'); if (p) *p = 0;
 
-		mir_sntprintf(tszLibCrypt, SIZEOF(tszLibCrypt), _T("%s\\libeay32.dll"), dll);
-		mir_sntprintf(tszLibSSL, SIZEOF(tszLibSSL), _T("%s\\ssleay32.dll"), dll);
+		mir_sntprintf(tszLibCrypt, SIZEOF(tszLibCrypt), _T("%s\\openssl\\libeay32.dll"), dll);
+		mir_sntprintf(tszLibSSL, SIZEOF(tszLibSSL), _T("%s\\openssl\\ssleay32.dll"), dll);
 
 		g_hOpenSSLCrypto = LoadLibrary(tszLibCrypt);
 		g_hOpenSSL = LoadLibrary(tszLibSSL);
