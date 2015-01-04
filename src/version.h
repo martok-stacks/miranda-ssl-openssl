@@ -1,8 +1,9 @@
+#define __MAJOR_VERSION            0
+#define __MINOR_VERSION            95
+#define __RELEASE_NUM              4
+#define __BUILD_NUM                2
 
-#include <m_version.h>
-
-#define __FILEVERSION_STRING      MIRANDA_VERSION_FILEVERSION
-#define __VERSION_STRING          MIRANDA_VERSION_STRING
+#include <stdver.h>
 
 #define __PLUGIN_NAME            "OpenSSL SSL Driver"
 #define __INTERNAL_NAME          "ssl_openssl"
