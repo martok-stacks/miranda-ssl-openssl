@@ -1,17 +1,17 @@
 miranda-ssl-openssl
 ===================
 
-Core Plugin to provide OpenSSL SslApi to (patched) Miranda NG. This requires a Miranda built with
-SSL plugin loading support, i.e. [this branch](https://github.com/martok/miranda-ng/tree/sslapi).
+Plugin to provide OpenSSL SslApi to Miranda NG. This requires a Miranda built with
+SSL plugin loading support, i.e. 0.95.4 onwards.
 
 Building
 --------
 1. Clone the Miranda NG [source tree](https://github.com/miranda-ng/miranda-ng).
-2. Clone this repository a directory below `$miranda-ng\src\core\`
-3. Open the project and either add it to the miranda solution or save a new one in the same directory as miranda32.sln
-4. Build `sslapi_openssl_10` (and dependencies). You should receive `SslApi_OpenSSL.dll` in `$miranda-ng\bin10\Core\`
-5. Copy `SslApi_OpenSSL.dll` with `libeay32.dll` and `ssleay32.dll` ([official distribution](https://www.openssl.org/related/binaries.html))
-   to your the subdirectory `Core` (*not* `Plugins`!) of your Miranda installation path.
+2. Clone this repository a directory below `$miranda-ng\plugins\`
+3. Open the project and add it to the miranda solution (`miranda32.sln`)
+4. Build Miranda, then `ssl_openssl_10` (and dependencies). You should receive `Ssl_OpenSSL.dll` in `$miranda-ng\bin10\Release\Plugins\`
+5. Copy `Ssl_OpenSSL.dll` to `Plugins` directory and `libeay32.dll` and `ssleay32.dll`
+   ([official distribution](https://www.openssl.org/related/binaries.html)) to `Plugins\openssl`.
 6. Done! You should now have reasonably good SSL in your Miranda.
 
 Logging
