@@ -4,6 +4,13 @@ miranda-ssl-openssl
 Plugin to provide OpenSSL SslApi to Miranda NG. This requires a Miranda built with
 SSL plugin loading support, i.e. 0.95.4 onwards.
 
+IMPORTANT NOTE
+--------------
+
+This work has been integrated into Miranda NG! Don't use this package, but use [the official plugin](http://wiki.miranda-ng.org/index.php?title=Plugin:OpenSSL) instead.
+
+This repository remains for historical purposes.
+
 Building
 --------
 1. Clone the Miranda NG [source tree](https://github.com/miranda-ng/miranda-ng).
